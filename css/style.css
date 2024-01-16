@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&display=swap');
+
+/* selector universal */
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+h1{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+    color: rgb(242, 8, 51);
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    color: rgb(41, 3, 9);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.p2{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+a,h1,h2,h3,p{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* selectores descendentes */
+nav ul li a{
+    color: rgb(248, 243, 244);
+    text-transform: uppercase;
+}
+
+.bgred3{
+    background-color: rgba(226, 6, 6, 0.363);
+    border-radius: 10px;
+}
+
+.bgredheader{
+    background-color: rgba(226, 6, 6, 0.363);
+}
+
+.bgred1{
+    background-color: rgba(236, 32, 32, 0.705);
+    border-radius: 15px;
+    
+}
+
+.borderred{
+    border: solid rgb(207, 19, 50) 1px;
+    border-radius: 5px;
+}
+
+.bgred{
+    background-color: #f2d5d5;
+}
+
+.box-adds{
+    background-color: rgb(242, 8, 51);
+    padding: 8px 0px;  
+    text-align: center; color: antiquewhite;
+}
+
+.nunitolight{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+}
+
+#carouselExampleIndicators{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    /* padding-top: 0px;
+    margin-left: 25%; */
+    
+}
+
+/* header img{
+width: 100%;
+} */
+
+.headerprod{
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    background-color: rgb(242, 8, 51);
+    padding: 5px 40px; 
+}
+
+.menu img{
+    width: 200px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.noneDecoration{
+    text-decoration: none;
+}
+
+.menu ul li{
+    margin-right: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(248, 243, 244);
+    text-transform: uppercase;
+}
+
+/* 2 - selector de clase */
+.text-bold{
+    font-weight: bold;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.text-primary{
+    color: rgb(242, 7, 51)
+}
+
+.nunitolight{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+}
+
+footer img{
+    display: inline;
+    width: 50px;
+    padding-top: 50px;
+}
+
+.wpp img{
+width: 60px;
+position: fixed;
+right: 100px;
+bottom: 50px;
+}
+
+/* 3 - selector de ID */
+/* #myAdd{
+    /* porpiedades, valor */
+
+
+/* productos destacados */
+    /* .productos-destacados{ */ 
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 50px; */
+    
+
+.productosart img{
+    width: 100%;
+}
+figure.productosart figcaption{
+    color: red;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+figure.productosart a{
+    background-color: rgb(242, 8, 51);
+    color: #F2DDD5;
+    padding: 4x 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    
+}
+figure.productosart p{
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home .homeheader{
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+}
+
+
+.home .homeinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-left: 15%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgba(233, 78, 78, 0.589);
+    border-radius: 15px;
+    width: 70%;
+
+}
+
+.home .homeinfo h1{
+    font-size: 35px;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.home .homeinfo p{
+    font-size: 22px;
+    width: 70%;
+}
+
+.home .home-produ{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 25px; 
+}
+
+.home .productosart{
+    border: red 3px solid;
+    border-radius: 15px;
+    width: 26%;
+    margin-bottom: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .home-produ .productosart img{
+    width: 80%;
+}
+
+.home-produ .productosart a:hover{
+    color: rgb(194, 148, 155);
+}
+
+.store{
+    display: grid;
+    grid-template-columns: 20% repeat(2,1fr);
+    grid-template-rows: 80px repeat(3,300px);
+    grid-template-areas: 
+    "actions actions actions"
+    "filters prod1 prod1"
+    "filters prod2 prod3"
+    " . prod2 prod4 ";
+    gap: 5px;
+}
+
+.store .actions{
+    padding: 0 30px;
+    /* nombre de la grid */
+    grid-area: actions;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.store .actions button{
+    margin-left: 10px;
+    background-color: red;
+    color: #F2DDD5;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.store .actions input{
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+}
+
+
+.store .filters{
+    padding: 0px 20px 30px 30px;
+    grid-area: filters;
+}
+
+.store .prod1{
+    grid-area: prod1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+}
+
+.store .prod1 p{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.store .prod1 img{
+    width: 20%;
+}
+
+.store .prod2{
+    grid-area: prod2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.store .prod2 img{
+    width: 70%;
+}
+
+.store .prod3{
+    grid-area: prod3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store .prod3 img{
+    width: 30%;
+}
+
+.store .prod4{
+    grid-area: prod4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.store .filters a{
+    font-size: 1.4em;
+    text-decoration: none;
+    margin-bottom: 4px;
+    text-transform: lowercase;
+    color: red;
+}
+
+.store .filters a:hover{
+    color: rgb(173, 116, 125);
+}
+
+.store .filters span{
+    display: block;
+    color: black;
+    margin: 10px 0px;
+    letter-spacing: 1px;
+}
+
+.store .filters select{
+    color: white;
+    border: none;
+    background-color: red;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.store .filters li{
+    padding-left: 10px;
+    list-style: none; 
+}
+
+#contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+     grid-template-rows: repeat(5,20vh);
+
+}
+
+.cuadros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 10px;
+
+}
+/* =============== BEM (nosotros.html) =============== */
+.about{
+    padding: 10px 30px;
+}
+.about__box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.about__box--reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+.about__header--left{
+    text-align: left;
+    margin: 10px 0;
+}
+.about__text--md{
+    display: block;
+    text-align: start;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: rgb(207, 19, 50);
+}
+.about__link--left{
+    display: block;
+    text-align: left;
+    color: red;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.about__list--red{
+    color: red;
+    list-style: square;
+    padding-left: 80px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin: 20px 10px;
+}
+
+
+/* =============== Pseudo clases (.about) =============== 
+Las pseudo-clases se utilizan para seleccionar elementos en un estado específico o que cumplan ciertas condiciones.
+*/
+
+/* :hover */
+.menu ul li a:hover{
+    color: rgb(223, 147, 147);
+}
+.about__box--reverse img:hover{
+    border: solid rgb(219, 208, 102) 3px;
+    border-radius: 5px;
+}
+/* :visited */
+/* .menu ul li a:visited{
+    color: rgb(255, 255, 255);
+} */
+/* :active */
+.menu ul li a:active{
+    color: rgb(204, 106, 106);
+}
+/* :first child*/
+.about__list--gray li:first-child{
+    /* color: deeppink;
+    background-color: yellowgreen; */
+}
+/* :nth child*/
+.about__list--gray li:nth-child(3){
+    /* color: blue;
+    background-color: pink; */
+}
+footer div a:first-child{
+    /* background-color: red; */
+}
+/* :last child */
+.about__list--gray li:last-child{
+    /* background-color: orange; */
+}
+/* :not*/
+.about__list--gray li:not(.sinBold){
+    /* font-weight: bold; */
+}
+
+/*  =============== Pseudo elementos (.about) =============== 
+Los pseudo-elementos se utilizan para aplicar estilos a partes específicas de un elemento.
+*/
+
+/* ::before*/
+.about__header--left::before{
+    /* content: "";
+    color: black;
+    padding-left: 30px;
+    background-color: yellow; */
+}
+/* ::after*/
+.about__header--left::after{
+    /* content: url(../img/iconos/facebook.png);
+    color: black;
+    padding-left: 30px;
+    background-color: yellow; */
+}
+/* ::first letter */
+.about__text--important::first-letter{
+    font-size: 3em;
+    margin-right: 5px;
+}
+/* ::first line*/
+.about__text--important::first-line{
+    font-weight: bold;
+}
+
+/* =============== selectores avanzados  =============== */
+.active{
+    background-color: rgb(177, 28, 35);
+}
+/* selector por atributo */
+a[href="#"]{
+    border: solid 2px rgb(197, 131, 131);
+     
+}
+.about__box--reverse img[src="../img/collage.png"]{
+    border: ;
+    border-radius: 5px;
+}
+img[src$=".jpg"]{
+    /* border: solid red 3px; */
+}
+
+/*selector adyacente / hermano + */
+.about__box div h1 + p + h2{
+    /* background-color: green; */
+}
+/* selector hijo > */
+.about__box div h1 + p > span{
+    /* background-color: blue; */
+}
+
+/* ==== inicia responsive ======= */ 
+@media (width < 900px){
+    .home .productosart{
+        width: 45%;
+    }
+}
+
+@media (width < 768px){
+    .home .productosart{
+        width: 80%;
+    }
+
+    .store{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "actions"
+        "filters"
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4"; 
+     }
+     .store .actions{
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+     }
+     .store .prod1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .store .prod1 p{
+        width: 50%;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
+     .store .prod1 img{
+        margin-top: 15px;
+     }
+}
+
+.card h2{
+    color: red;
+}
+
+.card .bg-card{
+    background-color: crimson;
+    color: rgb(219, 192, 192); 
+}
+
+.card .bg-card:hover{
+    background-color: rgb(167, 19, 48);
+    color: rgb(163, 122, 122); 
+}
+
+
+
+/* breakpoints populares 
+
+320px
+480px
+768px
+1024px
+1200px
+1400px
+ */
+
+ .borderRed{
+    /* camelcase */
+ }
+
+ .text-center{
+    /* kebab */
+ }
+ 
