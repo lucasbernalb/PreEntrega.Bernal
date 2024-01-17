@@ -466,8 +466,8 @@ Las pseudo-clases se utilizan para seleccionar elementos en un estado específic
     color: rgb(255, 255, 255);
 } */
 /* :active */
-.menu ul li a:active{
-    color: rgb(204, 106, 106);
+.navbar menu ul li a:active{
+    color: rgb(90, 48, 48);
 }
 /* :first child*/
 .about__list--gray li:first-child{
@@ -526,6 +526,7 @@ Los pseudo-elementos se utilizan para aplicar estilos a partes específicas de u
 /* selector por atributo */
 a[href="#"]{
     border: solid 2px rgb(197, 131, 131);
+    border-radius: 5px;
      
 }
 .about__box--reverse img[src="../img/collage.png"]{
