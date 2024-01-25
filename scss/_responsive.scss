@@ -1,0 +1,60 @@
+.store{
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "actions"
+    "filters"
+    "prod1"
+    "prod2"
+    "prod3"
+    "prod4"; 
+ }
+
+ .store .actions{
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+ }
+ .store .prod1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+       width: 50%;
+       align-items: center;
+       margin-top: 10px;
+       margin-bottom: 10px;
+    }
+    img{
+       margin-top: 15px;
+    }
+ }
+
+.container-fluid h2{
+padding: 15px;
+}
+
+.card h2{
+color: red;
+}
+
+.card .bg-card{
+background-color: crimson;
+color: rgb(219, 192, 192); 
+&:hover{
+background-color: rgb(167, 19, 48);
+color: rgb(163, 122, 122); 
+}
+}
+
+button.btn.bgred3{
+background-color: rgba(230, 19, 19, 0.637);
+color: white;
+&:hover{
+background-color: rgba(221, 12, 12, 0.87);
+color: white;
+border-color: rgb(255, 255, 255);
+}
+}
+

@@ -1,0 +1,139 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&display=swap');
+// vars
+$mainFont: 'Nunito Sans', sans-serif;
+$secondFont: Verdana, sans-serif;
+//weights
+$light:300;
+$regular:400;
+$bold:600;
+//colors
+$mainColor: rgba(218, 14, 14, 0.87);
+$secondaryColor: rgb(242, 8, 51);
+$pColor: rgb(41, 3, 9);
+$White: rgb(231, 219, 219);
+$Black: rgba(3, 3, 3, 0.87);
+$Background: rgba(226, 6, 6, 0.363);
+//sizes
+$sm:0.8em;
+$md:1em;
+$lg:1.6em;
+$xl:2em;
+$xxl:3em;
+
+//todo lo general
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: $mainColor;
+}
+h2,
+h3{
+    font-family:$mainFont;
+    color: $secondaryColor;
+    font-weight: $bold;
+    text-align: center;
+}
+h4{
+    font-family:$secondFont;
+}
+p{
+    color: $pColor;
+    line-height: $lg;
+    font-size: $md;
+
+}
+
+.p2{
+    color: $White;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.bgred3{
+    background-color: rgba(226, 6, 6, 0.363);
+    border-radius: 10px;
+}
+
+.bgredheader{
+    background-color: rgba(226, 6, 6, 0.363);
+}
+
+.bgred1{
+    background-color: rgba(236, 32, 32, 0.705);
+    border-radius: 15px;
+    
+}
+
+.borderred{
+    border: solid rgb(207, 19, 50) 1px;
+    border-radius: 5px;
+}
+
+.bgred{
+    background-color: #f2d5d5;
+}
+
+.box-adds{
+    background-color: rgb(242, 8, 51);
+    padding: 8px 0px;  
+    text-align: center; color: antiquewhite;
+}
+
+.nunitolight{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+}
+
+#carouselExampleIndicators{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    /* padding-top: 0px;
+    margin-left: 25%; */ 
+}
+body {
+    background-color: red;
+  }
+
+  .text-bold{
+    font-weight: $bold;
+}
+
+.text-italic{
+    font-style: $light;
+}
+
+.text-primary{
+    color: rgb(242, 7, 51)
+}
+
+.nunitolight{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+}
+
+a[href="#"]{
+    border: solid 2px rgb(197, 131, 131);
+    border-radius: 5px;
+}
+
+@media (width < 900px){
+    .home .productosart{
+        width: 45%;
+    }
+}
+
+@media (width < 768px){
+    .home .productosart{
+        width: 80%;
+    }
+}

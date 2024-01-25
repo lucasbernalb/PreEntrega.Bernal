@@ -3,4 +3,5 @@ node_modules/
 *.psd
 *.ai
 *.map
+style.cass
 passwords.txt

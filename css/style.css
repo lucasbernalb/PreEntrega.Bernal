@@ -290,17 +290,7 @@ figure.productosart p{
     color: rgb(194, 148, 155);
 }
 
-.store{
-    display: grid;
-    grid-template-columns: 20% repeat(2,1fr);
-    grid-template-rows: 80px repeat(3,300px);
-    grid-template-areas: 
-    "actions actions actions"
-    "filters prod1 prod1"
-    "filters prod2 prod3"
-    " . prod2 prod4 ";
-    gap: 5px;
-}
+
 
 .store .actions{
     padding: 0 30px;

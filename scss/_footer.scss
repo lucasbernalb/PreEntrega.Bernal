@@ -1,0 +1,22 @@
+footer{
+    background-color: rgba(228, 8, 8, 0.658);
+    ul{
+         list-style: none;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    img{
+        display: inline;
+        width: 50px;
+        padding-top: 50px;
+    }
+}
+
+.wpp img{
+width: 60px;
+position: fixed;
+right: 100px;
+bottom: 50px;
+}

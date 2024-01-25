@@ -1,0 +1,57 @@
+.about{
+    padding: 10px 30px;
+    &__box{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        &--reverse{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            img:hover{
+                border: solid rgb(219, 208, 102) 3px;
+                border-radius: 5px;
+            }
+        }
+    }
+    &__header{
+        &--left{
+        text-align: left;
+        margin: 10px 0;
+        }
+    }
+    &__text{
+        &--md{
+            display: block;
+            text-align: start;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: rgb(207, 19, 50);
+        }
+    }
+    &__link{
+        &--left{
+            display: block;
+            text-align: left;
+            color: red;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+    }
+    &__list{
+        &--red{
+            color: red;
+            list-style: square;
+            padding-left: 80px;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            font-weight: 300;
+            margin: 20px 10px;
+        }
+    }
+}
+
+.about__box--reverse img[src="../img/collage.png"]{
+    border-radius: 5px;
+  }

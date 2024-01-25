@@ -1,0 +1,87 @@
+figure.productosart{
+    & figcaption{
+        color: red;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    a{
+        background-color: rgb(242, 8, 51);
+        color: #F2DDD5;
+        padding: 4x 20px;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+    p{
+       font-size: 1.2em;
+       line-height: 1.4em;
+       margin-bottom: 20px;
+       margin-top: 20px;
+       text-align: center;
+    }
+}
+.productosart img{
+    width: 100%;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    .homeheader{
+        display: flex;
+        justify-content: start;
+        padding: 20px;
+    }
+    .homeinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        margin-left: 15%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: rgba(233, 78, 78, 0.589);
+        border-radius: 15px;
+        width: 70%;
+        h1{
+           font-size: 35px;
+           width: 70%;
+           margin-bottom: 50px;
+        }
+        p{
+           font-size: 22px;
+           width: 70%;
+        }
+    }
+    .home-produ{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px 25px; 
+    }
+    .productosart{
+        border: red 3px solid;
+        border-radius: 15px;
+        width: 26%;
+        margin-bottom: 60px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-produ .productosart img{
+        width: 80%;
+    }
+    .productosart a:hover{
+        color: rgb(194, 148, 155);
+    }
+}
+
