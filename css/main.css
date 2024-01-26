@@ -42,31 +42,36 @@ p {
 }
 
 .bgbutton {
-  background-color: rgba(184, 28, 28, 0.692);
+  background-color: rgba(201, 28, 28, 0.801);
   color: rgb(231, 219, 219);
+  border-color: solid rgba(228, 99, 99, 0.692) 1px;
+  border-radius: 15px;
 }
 
 button.btn.bgbutton:hover {
   background-color: rgb(231, 219, 219);
-  color: rgba(231, 9, 9, 0.856);
+  color: 3px rgba(231, 9, 9, 0.856);
   border-radius: 15px;
+  border: solid rgba(231, 9, 9, 0.856) 2px;
 }
 
 .bgredheader {
-  background-color: rgba(184, 28, 28, 0.692);
+  background-color: rgba(228, 99, 99, 0.692);
   color: rgb(231, 219, 219);
-}
-.bgredheader:hoover {
-  background-color: red;
 }
 
 .bgred1 {
-  background-color: rgba(236, 32, 32, 0.705);
+  background-color: rgba(201, 28, 28, 0.801);
   border-radius: 15px;
 }
 
+.bgred2 {
+  background-color: rgba(221, 91, 91, 0.705);
+  border-radius: 10px;
+}
+
 .borderred {
-  border: solid rgb(207, 19, 50) 1px;
+  border: solid rgba(231, 9, 9, 0.856) 1px;
   border-radius: 5px;
 }
 
@@ -114,7 +119,7 @@ button.btn.bgbutton:hover {
 }
 
 a[href="#"] {
-  border: solid 2px rgb(197, 131, 131);
+  border: solid 2px rgb(219, 194, 194);
   border-radius: 5px;
 }
 
@@ -257,108 +262,107 @@ figure.productosart p {
   color: rgb(194, 148, 155);
 }
 
-@media (width < 768px) {
-  .store {
-    display: grid;
-    grid-template-columns: 20% repeat(2, 1fr);
-    grid-template-rows: 80% repeat(3, 300px);
-    grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" " . prod2 prod4 ";
-    gap: 5px;
-  }
-  .store actions {
-    padding: 0 30px;
-    /* nombre de la grid */
-    grid-area: actions;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  .store actions button {
-    margin-left: 10px;
-    background-color: red;
-    color: #F2DDD5;
-    padding: 5px;
-    border: none;
-    border-radius: 4px;
-  }
-  .store actions .input {
-    padding: 6px;
-    border-radius: 3px;
-    border: none;
-    background-color: rgb(231, 219, 219);
-  }
-  .store .filters {
-    padding: 0px 20px 30px 30px;
-    grid-area: filters;
-  }
-  .store .filters a {
-    font-size: 1.4em;
-    text-decoration: none;
-    margin-bottom: 4px;
-    text-transform: lowercase;
-    color: red;
-  }
-  .store .filters a:hover {
-    color: rgb(173, 116, 125);
-  }
-  .store .filters span {
-    display: block;
-    color: black;
-    margin: 10px 0px;
-    letter-spacing: 1px;
-  }
-  .store .filters select {
-    color: white;
-    border: none;
-    background-color: red;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    font-size: 1em;
-  }
-  .store .filters li {
-    padding-left: 10px;
-    list-style: none;
-  }
-  .prod1 {
-    grid-area: prod1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .prod1 p {
-    width: 50%;
-    margin-left: 20px;
-  }
-  .prod1 img {
-    width: 20%;
-  }
-  .prod2 {
-    grid-area: prod2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .prod2 img {
-    width: 70%;
-  }
-  .prod3 {
-    grid-area: prod3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .prod3 img {
-    width: 30%;
-  }
-  .prod4 {
-    grid-area: prod4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.store {
+  display: grid;
+  grid-template-columns: 20% repeat(2, 1fr);
+  grid-template-rows: 80% repeat(3, 300px);
+  grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" " . prod2 prod4 ";
+  gap: 5px;
 }
+.store actions {
+  padding: 0 30px;
+  /* nombre de la grid */
+  grid-area: actions;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.store actions button {
+  margin-left: 10px;
+  background-color: red;
+  color: #F2DDD5;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+.store actions .input {
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(231, 219, 219);
+}
+.store .filters {
+  padding: 0px 20px 30px 30px;
+  grid-area: filters;
+}
+.store .filters a {
+  font-size: 1.4em;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+  color: red;
+}
+.store .filters a:hover {
+  color: rgb(202, 180, 184);
+}
+.store .filters span {
+  display: block;
+  color: rgb(207, 142, 142);
+  margin: 10px 0px;
+  letter-spacing: 1px;
+}
+.store .filters select {
+  color: white;
+  border: none;
+  background-color: red;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+.store .filters li {
+  padding-left: 10px;
+  list-style: none;
+}
+.store .prod1 {
+  grid-area: prod1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.store .prod1 p {
+  width: 50%;
+  margin-left: 20px;
+}
+.store .prod1 img {
+  width: 20%;
+}
+.store .prod2 {
+  grid-area: prod2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.store .prod2 img {
+  width: 70%;
+}
+.store .prod3 {
+  grid-area: prod3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store .prod3 img {
+  width: 30%;
+}
+.store .prod4 {
+  grid-area: prod4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #contenedor-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -428,13 +432,17 @@ footer img {
   padding: 15px;
 }
 
+.card div {
+  color: rgba(209, 20, 20, 0.521);
+}
+
 .card h2 {
   color: red;
 }
 
 .card .bg-card {
-  background-color: crimson;
-  color: rgb(219, 192, 192);
+  background-color: rgba(231, 9, 9, 0.856);
+  color: rgb(231, 219, 219);
 }
 .card .bg-card:hover {
   background-color: rgb(167, 19, 48);

@@ -1,4 +1,4 @@
-@media (width < 768px){
+@media (width < 768px){}
 .store{
     display: grid;
     grid-template-columns: 20% repeat(2,1fr);
@@ -41,12 +41,12 @@
             text-transform: lowercase;
             color: red;
             &:hover{
-                color: rgb(173, 116, 125);
+                color: rgb(202, 180, 184);
             }
         }
         span{
             display: block;
-            color: black;
+            color: rgb(207, 142, 142);
             margin: 10px 0px;
             letter-spacing: 1px;
         }
@@ -63,7 +63,7 @@
             list-style: none; 
         }
     }
-}
+
     .prod1{
         grid-area: prod1;
         display: flex;

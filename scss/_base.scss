@@ -10,8 +10,10 @@ $bold:600;
 //colors
 $mainColor: rgba(231, 9, 9, 0.856);
 $letterColor: rgba(221, 16, 16, 0.842);
+$acentColor: rgba(221, 91, 91, 0.705);
 $secondaryColor: rgba(209, 20, 20, 0.521);
-$terciaryColor: rgba(184, 28, 28, 0.692);
+$terciaryColor: rgba(228, 99, 99, 0.692);
+$buttonColor: rgba(201, 28, 28, 0.801);
 $pColor: rgb(41, 3, 9);
 $White: rgb(231, 219, 219);
 $Black: rgba(3, 3, 3, 0.87);
@@ -63,32 +65,37 @@ p{
 }
 
 .bgbutton{
-    background-color: $terciaryColor;
+    background-color: $buttonColor;
     color: $White;
+    border-color: solid $terciaryColor 1px;
+    border-radius: 15px;
 }
 
 button.btn.bgbutton:hover{
     background-color: $White;
-    color: $mainColor;
+    color: 3px $mainColor;
     border-radius: 15px;
+    border: solid $mainColor 2px;
 }
 
 .bgredheader{
     background-color: $terciaryColor;
     color: $White;
-    &:hoover{
-        background-color: red;
-    }
 }
 
 .bgred1{
-    background-color: rgba(236, 32, 32, 0.705);
+    background-color: $buttonColor;
     border-radius: 15px;
     
 }
 
+.bgred2{
+    background-color: $acentColor;
+    border-radius: 10px;
+    }
+
 .borderred{
-    border: solid rgb(207, 19, 50) 1px;
+    border: solid $mainColor 1px;
     border-radius: 5px;
 }
 
@@ -135,7 +142,7 @@ button.btn.bgbutton:hover{
 }
 
 a[href="#"]{
-    border: solid 2px rgb(197, 131, 131);
+    border: solid 2px rgb(219, 194, 194);
     border-radius: 5px;
 }
 
