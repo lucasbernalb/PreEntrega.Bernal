@@ -9,13 +9,13 @@
 h1 {
   font-size: 40px;
   text-align: center;
-  color: rgba(218, 14, 14, 0.87);
+  color: rgba(231, 9, 9, 0.856);
 }
 
 h2,
 h3 {
   font-family: "Nunito Sans", sans-serif;
-  color: rgb(242, 8, 51);
+  color: rgba(221, 16, 16, 0.842);
   font-weight: 600;
   text-align: center;
 }
@@ -37,12 +37,27 @@ p {
 }
 
 .bgred3 {
-  background-color: rgba(226, 6, 6, 0.363);
+  background-color: rgba(231, 9, 9, 0.856);
   border-radius: 10px;
 }
 
+.bgbutton {
+  background-color: rgba(184, 28, 28, 0.692);
+  color: rgb(231, 219, 219);
+}
+
+button.btn.bgbutton:hover {
+  background-color: rgb(231, 219, 219);
+  color: rgba(231, 9, 9, 0.856);
+  border-radius: 15px;
+}
+
 .bgredheader {
-  background-color: rgba(226, 6, 6, 0.363);
+  background-color: rgba(184, 28, 28, 0.692);
+  color: rgb(231, 219, 219);
+}
+.bgredheader:hoover {
+  background-color: red;
 }
 
 .bgred1 {
@@ -81,10 +96,6 @@ p {
   margin-left: 25%; */
 }
 
-body {
-  background-color: red;
-}
-
 .text-bold {
   font-weight: 600;
 }
@@ -118,11 +129,11 @@ a[href="#"] {
   }
 }
 nav ul li a {
-  color: rgb(248, 243, 244);
+  color: rgba(231, 9, 9, 0.856);
   text-transform: uppercase;
 }
 nav ul li a:active {
-  color: rgb(90, 48, 48);
+  color: rgba(209, 20, 20, 0.521);
 }
 
 .headerprod {
@@ -131,7 +142,7 @@ nav ul li a:active {
 }
 
 .menu {
-  background-color: rgba(226, 6, 6, 0.363);
+  background-color: rgba(231, 9, 9, 0.856);
   padding: 5px 40px;
 }
 .menu img {
@@ -246,107 +257,108 @@ figure.productosart p {
   color: rgb(194, 148, 155);
 }
 
-.store {
-  display: grid;
-  grid-template-columns: 20% repeat(2, 1fr);
-  grid-template-rows: 80% repeat(3, 300px);
-  grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" " . prod2 prod4 ";
-  gap: 5px;
+@media (width < 768px) {
+  .store {
+    display: grid;
+    grid-template-columns: 20% repeat(2, 1fr);
+    grid-template-rows: 80% repeat(3, 300px);
+    grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" " . prod2 prod4 ";
+    gap: 5px;
+  }
+  .store actions {
+    padding: 0 30px;
+    /* nombre de la grid */
+    grid-area: actions;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .store actions button {
+    margin-left: 10px;
+    background-color: red;
+    color: #F2DDD5;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+  }
+  .store actions .input {
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(231, 219, 219);
+  }
+  .store .filters {
+    padding: 0px 20px 30px 30px;
+    grid-area: filters;
+  }
+  .store .filters a {
+    font-size: 1.4em;
+    text-decoration: none;
+    margin-bottom: 4px;
+    text-transform: lowercase;
+    color: red;
+  }
+  .store .filters a:hover {
+    color: rgb(173, 116, 125);
+  }
+  .store .filters span {
+    display: block;
+    color: black;
+    margin: 10px 0px;
+    letter-spacing: 1px;
+  }
+  .store .filters select {
+    color: white;
+    border: none;
+    background-color: red;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  .store .filters li {
+    padding-left: 10px;
+    list-style: none;
+  }
+  .prod1 {
+    grid-area: prod1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .prod1 p {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .prod1 img {
+    width: 20%;
+  }
+  .prod2 {
+    grid-area: prod2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .prod2 img {
+    width: 70%;
+  }
+  .prod3 {
+    grid-area: prod3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prod3 img {
+    width: 30%;
+  }
+  .prod4 {
+    grid-area: prod4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.store actions {
-  padding: 0 30px;
-  /* nombre de la grid */
-  grid-area: actions;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.store actions button {
-  margin-left: 10px;
-  background-color: red;
-  color: #F2DDD5;
-  padding: 5px;
-  border: none;
-  border-radius: 4px;
-}
-.store actions .input {
-  padding: 6px;
-  border-radius: 3px;
-  border: none;
-  background-color: rgb(231, 219, 219);
-}
-.store .filters {
-  padding: 0px 20px 30px 30px;
-  grid-area: filters;
-}
-.store .filters a {
-  font-size: 1.4em;
-  text-decoration: none;
-  margin-bottom: 4px;
-  text-transform: lowercase;
-  color: red;
-}
-.store .filters a:hover {
-  color: rgb(173, 116, 125);
-}
-.store .filters span {
-  display: block;
-  color: black;
-  margin: 10px 0px;
-  letter-spacing: 1px;
-}
-.store .filters select {
-  color: white;
-  border: none;
-  background-color: red;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  font-size: 1em;
-}
-.store .filters li {
-  padding-left: 10px;
-  list-style: none;
-}
-.store .prod1 {
-  grid-area: prod1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod1 p {
-  width: 50%;
-  margin-left: 20px;
-}
-.store .prod1 img {
-  width: 20%;
-}
-.store .prod2 {
-  grid-area: prod2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod2 img {
-  width: 70%;
-}
-.store .prod3 {
-  grid-area: prod3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod3 img {
-  width: 30%;
-}
-.store .prod4 {
-  grid-area: prod4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #contenedor-grid {
   display: grid;
   grid-template-columns: 1fr;

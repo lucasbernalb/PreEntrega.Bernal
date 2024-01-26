@@ -1,4 +1,4 @@
-
+@media (width < 768px){
 .store{
     display: grid;
     grid-template-columns: 20% repeat(2,1fr);
@@ -63,6 +63,7 @@
             list-style: none; 
         }
     }
+}
     .prod1{
         grid-area: prod1;
         display: flex;
