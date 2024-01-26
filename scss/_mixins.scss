@@ -1,0 +1,30 @@
+//extend
+
+.btn-base{
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.btn-main{
+    @extend .btn-base;
+    background-color: $mainColor;
+    color: $White;
+}
+
+.btn-secondary{
+    @extend .btn-base;
+    background-color: $secondaryColor;
+    color: $White;
+}
+
+.btn-stroke{
+    @extend .btn-base;
+        background-color: $White;
+        color: $mainColor;
+        &:hover{
+            background-color: $mainColor;
+            color: $White;
+        }
+    }

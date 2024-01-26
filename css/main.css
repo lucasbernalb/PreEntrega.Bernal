@@ -133,6 +133,32 @@ a[href="#"] {
     width: 80%;
   }
 }
+.btn-base, .btn-stroke, .btn-secondary, .btn-main {
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.btn-main {
+  background-color: rgba(231, 9, 9, 0.856);
+  color: rgb(231, 219, 219);
+}
+
+.btn-secondary {
+  background-color: rgba(209, 20, 20, 0.521);
+  color: rgb(231, 219, 219);
+}
+
+.btn-stroke {
+  background-color: rgb(231, 219, 219);
+  color: rgba(231, 9, 9, 0.856);
+}
+.btn-stroke:hover {
+  background-color: rgba(231, 9, 9, 0.856);
+  color: rgb(231, 219, 219);
+}
+
 nav ul li a {
   color: rgba(231, 9, 9, 0.856);
   text-transform: uppercase;
@@ -262,107 +288,108 @@ figure.productosart p {
   color: rgb(194, 148, 155);
 }
 
-.store {
-  display: grid;
-  grid-template-columns: 20% repeat(2, 1fr);
-  grid-template-rows: 80% repeat(3, 300px);
-  grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" " . prod2 prod4 ";
-  gap: 5px;
+@media (width < 992px) {
+  .store {
+    display: grid;
+    grid-template-columns: 20% repeat(2, 1fr);
+    grid-template-rows: 80% repeat(3, 300px);
+    grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" " . prod2 prod4 ";
+    gap: 5px;
+  }
+  .store actions {
+    padding: 0 30px;
+    /* nombre de la grid */
+    grid-area: actions;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .store actions button {
+    margin-left: 10px;
+    background-color: red;
+    color: #F2DDD5;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+  }
+  .store actions .input {
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(231, 219, 219);
+  }
+  .store .filters {
+    padding: 0px 20px 30px 30px;
+    grid-area: filters;
+  }
+  .store .filters a {
+    font-size: 1.4em;
+    text-decoration: none;
+    margin-bottom: 4px;
+    text-transform: lowercase;
+    color: red;
+  }
+  .store .filters a:hover {
+    color: rgb(202, 180, 184);
+  }
+  .store .filters span {
+    display: block;
+    color: rgb(207, 142, 142);
+    margin: 10px 0px;
+    letter-spacing: 1px;
+  }
+  .store .filters select {
+    color: white;
+    border: none;
+    background-color: red;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  .store .filters li {
+    padding-left: 10px;
+    list-style: none;
+  }
+  .store .prod1 {
+    grid-area: prod1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .store .prod1 p {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .store .prod1 img {
+    width: 20%;
+  }
+  .store .prod2 {
+    grid-area: prod2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .store .prod2 img {
+    width: 70%;
+  }
+  .store .prod3 {
+    grid-area: prod3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .store .prod3 img {
+    width: 30%;
+  }
+  .store .prod4 {
+    grid-area: prod4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.store actions {
-  padding: 0 30px;
-  /* nombre de la grid */
-  grid-area: actions;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.store actions button {
-  margin-left: 10px;
-  background-color: red;
-  color: #F2DDD5;
-  padding: 5px;
-  border: none;
-  border-radius: 4px;
-}
-.store actions .input {
-  padding: 6px;
-  border-radius: 3px;
-  border: none;
-  background-color: rgb(231, 219, 219);
-}
-.store .filters {
-  padding: 0px 20px 30px 30px;
-  grid-area: filters;
-}
-.store .filters a {
-  font-size: 1.4em;
-  text-decoration: none;
-  margin-bottom: 4px;
-  text-transform: lowercase;
-  color: red;
-}
-.store .filters a:hover {
-  color: rgb(202, 180, 184);
-}
-.store .filters span {
-  display: block;
-  color: rgb(207, 142, 142);
-  margin: 10px 0px;
-  letter-spacing: 1px;
-}
-.store .filters select {
-  color: white;
-  border: none;
-  background-color: red;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  font-size: 1em;
-}
-.store .filters li {
-  padding-left: 10px;
-  list-style: none;
-}
-.store .prod1 {
-  grid-area: prod1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod1 p {
-  width: 50%;
-  margin-left: 20px;
-}
-.store .prod1 img {
-  width: 20%;
-}
-.store .prod2 {
-  grid-area: prod2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod2 img {
-  width: 70%;
-}
-.store .prod3 {
-  grid-area: prod3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod3 img {
-  width: 30%;
-}
-.store .prod4 {
-  grid-area: prod4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #contenedor-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -400,34 +427,33 @@ footer img {
   bottom: 50px;
 }
 
-.store {
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas: "actions" "filters" "prod1" "prod2" "prod3" "prod4";
+@media (width < 992px) {
+  .store {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "actions" "filters" "prod1" "prod2" "prod3" "prod4";
+  }
+  .store .actions {
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .store .prod1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .store .prod1 p {
+    width: 50%;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .store .prod1 img {
+    margin-top: 15px;
+  }
 }
-
-.store .actions {
-  padding: 0;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.store .prod1 {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.store .prod1 p {
-  width: 50%;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.store .prod1 img {
-  margin-top: 15px;
-}
-
 .container-fluid h2 {
   padding: 15px;
 }

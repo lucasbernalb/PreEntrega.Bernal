@@ -1,4 +1,4 @@
-@media (width < 768px){}
+@media (width < 992px){
 .store{
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -31,6 +31,7 @@
        margin-top: 15px;
     }
  }
+}
 
 .container-fluid h2{
 padding: 15px;
