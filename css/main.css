@@ -137,7 +137,7 @@ a[href="#"] {
   padding: 4px;
   display: flex;
   justify-content: space-between;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .btn-main {
@@ -157,6 +157,21 @@ a[href="#"] {
 .btn-stroke:hover {
   background-color: rgba(231, 9, 9, 0.856);
   color: rgb(231, 219, 219);
+}
+
+.header-base, .header-profesionals, .header-home {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-home {
+  background-image: url(../img/header/header4.jpg);
+}
+
+.header-profesionals {
+  background-image: url(../img/header/header2.png);
 }
 
 nav ul li a {

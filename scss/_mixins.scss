@@ -1,10 +1,10 @@
-//extend
+//extends
 
 .btn-base{
     padding: 4px;
     display: flex;
     justify-content: space-between;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .btn-main{
@@ -28,3 +28,22 @@
             color: $White;
         }
     }
+
+.header-base{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-home{
+    @extend .header-base;
+    background-image: url(../img/header/header4.jpg);
+}
+
+.header-profesionals{
+    @extend.header-base;
+    background-image: url(../img/header/header2.png);
+}
+
+//mixins
