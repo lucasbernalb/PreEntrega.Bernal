@@ -123,16 +123,6 @@ a[href="#"] {
   border-radius: 5px;
 }
 
-@media (width < 900px) {
-  .home .productosart {
-    width: 45%;
-  }
-}
-@media (width < 768px) {
-  .home .productosart {
-    width: 80%;
-  }
-}
 .btn-base, .btn-stroke, .btn-secondary, .btn-main {
   padding: 4px;
   display: flex;
@@ -142,6 +132,10 @@ a[href="#"] {
 
 .btn-main {
   background-color: rgba(231, 9, 9, 0.856);
+  color: rgb(231, 219, 219);
+}
+.btn-main:hover {
+  background-color: rgba(209, 20, 20, 0.521);
   color: rgb(231, 219, 219);
 }
 
@@ -172,6 +166,42 @@ a[href="#"] {
 
 .header-profesionals {
   background-image: url(../img/header/header2.png);
+}
+
+.productosart p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 20px;
+  color: rgba(231, 9, 9, 0.856);
+}
+
+.box-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  background-color: rgba(231, 9, 9, 0.856);
+}
+
+.box-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(209, 20, 20, 0.521);
+}
+
+.bg-violet {
+  background-color: rgb(41, 3, 9);
+}
+
+.box {
+  width: 100vw;
+  height: 103vh;
+  background-color: rgba(221, 91, 91, 0.705);
 }
 
 nav ul li a {
@@ -216,6 +246,13 @@ nav ul li a:active {
 }
 .menu .navbar-toggler {
   border: solid white 1px;
+}
+
+.headernosotros {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 figure.productosart figcaption {
@@ -303,108 +340,121 @@ figure.productosart p {
   color: rgb(194, 148, 155);
 }
 
-@media (width < 992px) {
-  .store {
-    display: grid;
-    grid-template-columns: 20% repeat(2, 1fr);
-    grid-template-rows: 80% repeat(3, 300px);
-    grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" " . prod2 prod4 ";
-    gap: 5px;
-  }
-  .store actions {
-    padding: 0 30px;
-    /* nombre de la grid */
-    grid-area: actions;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  .store actions button {
-    margin-left: 10px;
-    background-color: red;
-    color: #F2DDD5;
-    padding: 5px;
-    border: none;
-    border-radius: 4px;
-  }
-  .store actions .input {
-    padding: 6px;
-    border-radius: 3px;
-    border: none;
-    background-color: rgb(231, 219, 219);
-  }
-  .store .filters {
-    padding: 0px 20px 30px 30px;
-    grid-area: filters;
-  }
-  .store .filters a {
-    font-size: 1.4em;
-    text-decoration: none;
-    margin-bottom: 4px;
-    text-transform: lowercase;
-    color: red;
-  }
-  .store .filters a:hover {
-    color: rgb(202, 180, 184);
-  }
-  .store .filters span {
-    display: block;
-    color: rgb(207, 142, 142);
-    margin: 10px 0px;
-    letter-spacing: 1px;
-  }
-  .store .filters select {
-    color: white;
-    border: none;
-    background-color: red;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    font-size: 1em;
-  }
-  .store .filters li {
-    padding-left: 10px;
-    list-style: none;
-  }
-  .store .prod1 {
-    grid-area: prod1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .store .prod1 p {
-    width: 50%;
-    margin-left: 20px;
-  }
-  .store .prod1 img {
-    width: 20%;
-  }
-  .store .prod2 {
-    grid-area: prod2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .store .prod2 img {
-    width: 70%;
-  }
-  .store .prod3 {
-    grid-area: prod3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .store .prod3 img {
-    width: 30%;
-  }
-  .store .prod4 {
-    grid-area: prod4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (width < 900px) {
+  .home .productosart {
+    width: 45%;
   }
 }
+@media (width < 768px) {
+  .home .productosart {
+    width: 80%;
+  }
+}
+@media (width < 667px) {
+  .home .productosart {
+    width: 100%;
+  }
+}
+.store {
+  display: grid;
+  grid-template-columns: 20% repeat(2, 1fr);
+  grid-template-rows: 80% repeat(3, 300px);
+  grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" " . prod2 prod4 ";
+  gap: 3px;
+}
+.store .actions {
+  padding: 5px 40px;
+  grid-area: actions;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.store .actions button {
+  margin-left: 10px;
+  background-color: red;
+  color: #F2DDD5;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+.store .actions .input {
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(231, 219, 219);
+}
+.store .filters {
+  padding: 0px 20px 30px 30px;
+  grid-area: filters;
+}
+.store .filters a {
+  font-size: 1.4em;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+  color: red;
+}
+.store .filters a:hover {
+  color: rgb(202, 180, 184);
+}
+.store .filters span {
+  display: block;
+  color: rgb(207, 142, 142);
+  margin: 10px 0px;
+  letter-spacing: 1px;
+}
+.store .filters select {
+  color: white;
+  border: none;
+  background-color: red;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+.store .filters li {
+  padding-left: 10px;
+  list-style: none;
+}
+.store .prod1 {
+  grid-area: prod1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.store .prod1 p {
+  width: 50%;
+  margin-left: 20px;
+}
+.store .prod1 img {
+  width: 20%;
+}
+.store .prod2 {
+  grid-area: prod2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.store .prod2 img {
+  width: 70%;
+}
+.store .prod3 {
+  grid-area: prod3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store .prod3 img {
+  width: 30%;
+}
+.store .prod4 {
+  grid-area: prod4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #contenedor-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -420,13 +470,13 @@ figure.productosart p {
 }
 
 footer {
-  background-color: rgba(228, 8, 8, 0.658);
+  background-color: rgba(221, 16, 16, 0.842);
 }
 footer ul {
   list-style: none;
 }
 footer a {
-  color: white;
+  color: rgb(231, 219, 219);
   text-decoration: none;
 }
 footer img {
@@ -468,38 +518,36 @@ footer img {
   .store .prod1 img {
     margin-top: 15px;
   }
+  .container-fluid h2 {
+    padding: 15px;
+  }
+  .card div {
+    color: rgba(209, 20, 20, 0.521);
+  }
+  .card h2 {
+    background-color: rgba(201, 28, 28, 0.801);
+    color: rgb(231, 219, 219);
+    border-color: solid rgba(228, 99, 99, 0.692) 1px;
+    border-radius: 15px;
+  }
+  .card .bg-card {
+    background-color: rgba(231, 9, 9, 0.856);
+    color: rgb(231, 219, 219);
+  }
+  .card .bg-card:hover {
+    background-color: rgb(167, 19, 48);
+    color: rgb(163, 122, 122);
+  }
+  button.btn.bgred3 {
+    background-color: rgba(230, 19, 19, 0.637);
+    color: white;
+  }
+  button.btn.bgred3:hover {
+    background-color: rgba(221, 12, 12, 0.87);
+    color: white;
+    border-color: rgb(255, 255, 255);
+  }
 }
-.container-fluid h2 {
-  padding: 15px;
-}
-
-.card div {
-  color: rgba(209, 20, 20, 0.521);
-}
-
-.card h2 {
-  color: red;
-}
-
-.card .bg-card {
-  background-color: rgba(231, 9, 9, 0.856);
-  color: rgb(231, 219, 219);
-}
-.card .bg-card:hover {
-  background-color: rgb(167, 19, 48);
-  color: rgb(163, 122, 122);
-}
-
-button.btn.bgred3 {
-  background-color: rgba(230, 19, 19, 0.637);
-  color: white;
-}
-button.btn.bgred3:hover {
-  background-color: rgba(221, 12, 12, 0.87);
-  color: white;
-  border-color: rgb(255, 255, 255);
-}
-
 body {
   background-color: red;
 }

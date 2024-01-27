@@ -24,6 +24,9 @@ $md:1em;
 $lg:1.6em;
 $xl:2em;
 $xxl:3em;
+// width - height
+$width:100vw;
+$height:100vh;
 
 //todo lo general
 *{
@@ -146,14 +149,3 @@ a[href="#"]{
     border-radius: 5px;
 }
 
-@media (width < 900px){
-    .home .productosart{
-        width: 45%;
-    }
-}
-
-@media (width < 768px){
-    .home .productosart{
-        width: 80%;
-    }
-}

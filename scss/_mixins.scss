@@ -11,6 +11,10 @@
     @extend .btn-base;
     background-color: $mainColor;
     color: $White;
+    &:hover{
+        background-color: $secondaryColor;
+        color: $White;
+    }
 }
 
 .btn-secondary{
@@ -47,3 +51,61 @@
 }
 
 //mixins
+@mixin textos($size,$line,$padding,$color){
+    font-family: $mainFont; //variable global
+    font-size: $size; //variable local
+    line-height: $line; //var local
+    padding: $padding; //var local
+    color: $color; //var local
+}
+
+.productosart p{
+    @include textos(1em,1.4em,20px,$mainColor)
+}
+
+@mixin flex($dire,$justy,$align,$wrap){
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justy;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+.box-home{
+    @include flex(row,center,flex-end,nowrap);
+    background-color: $mainColor;
+}
+
+.box-col{
+    @include flex(column,flex-start,center,wrap);
+    background-color: $secondaryColor;
+}
+
+//maps
+$paleta:(
+    'uno': rgba(231, 9, 9, 0.856),
+    'dos':  rgba(221, 16, 16, 0.842),
+    'tres': rgb(41, 3, 9),
+    'cuatro': rgb(231, 219, 219),
+    'cinco': rgba(231, 9, 9, 0.856),
+    'seis': rgba(228, 99, 99, 0.692),
+    'siete': rgba(201, 28, 28, 0.801),
+    'ocho':rgba(221, 91, 91, 0.705),
+    'nueve': #f2d5d5,
+    'diez': rgb(242, 8, 51),
+    'once': rgb(219, 194, 194),
+    'doce': rgba(197, 42, 42, 0.801),
+    'trece':rgba(194, 8, 8, 0.925),
+);
+
+.bg-violet{
+    background-color: map-get($map:$paleta, $key:'tres');
+}
+
+//math
+.box{
+    width: $width;
+    height: $height + 3vh;
+    background-color: map-get($map:$paleta, $key:'ocho');
+}
+

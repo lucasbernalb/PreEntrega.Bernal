@@ -85,3 +85,20 @@ figure.productosart{
     }
 }
 
+@media (width < 900px){
+    .home .productosart{
+        width: 45%;
+    }
+}
+
+@media (width < 768px){
+    .home .productosart{
+        width: 80%;
+    }
+}
+
+@media (width < 667px){
+    .home .productosart{
+        width: 100%;
+    }
+}
