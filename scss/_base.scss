@@ -8,14 +8,14 @@ $light:300;
 $regular:400;
 $bold:600;
 //colors
-$mainColor: rgba(231, 9, 9, 0.856);
+$mainColor: rgba(163, 12, 12, 0.897);
 $letterColor: rgba(221, 16, 16, 0.842);
 $acentColor: rgba(221, 91, 91, 0.705);
 $secondaryColor: rgba(209, 20, 20, 0.521);
 $terciaryColor: rgba(228, 99, 99, 0.692);
 $buttonColor: rgba(201, 28, 28, 0.801);
 $pColor: rgb(41, 3, 9);
-$White: rgb(231, 219, 219);
+$White: rgb(238, 228, 228);
 $Black: rgba(3, 3, 3, 0.87);
 $Background: rgba(226, 6, 6, 0.363);
 //sizes
@@ -71,7 +71,7 @@ p{
     background-color: $buttonColor;
     color: $White;
     border-color: solid $terciaryColor 1px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 button.btn.bgbutton:hover{
@@ -144,8 +144,8 @@ button.btn.bgbutton:hover{
     font-size: 15px;
 }
 
-a[href="#"]{
-    border: solid 2px rgb(219, 194, 194);
-    border-radius: 5px;
-}
+// a[href="#"]{
+//     border: solid 2px rgb(219, 194, 194);
+//     border-radius: 5px;
+// }
 

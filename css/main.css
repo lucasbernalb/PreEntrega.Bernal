@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&display=swap");
 * {
   font-family: "Nunito Sans", sans-serif;
@@ -9,7 +10,7 @@
 h1 {
   font-size: 40px;
   text-align: center;
-  color: rgba(231, 9, 9, 0.856);
+  color: rgba(163, 12, 12, 0.897);
 }
 
 h2,
@@ -31,33 +32,33 @@ p {
 }
 
 .p2 {
-  color: rgb(231, 219, 219);
+  color: rgb(238, 228, 228);
   font-size: 18px;
   line-height: 24px;
 }
 
 .bgred3 {
-  background-color: rgba(231, 9, 9, 0.856);
+  background-color: rgba(163, 12, 12, 0.897);
   border-radius: 10px;
 }
 
 .bgbutton {
   background-color: rgba(201, 28, 28, 0.801);
-  color: rgb(231, 219, 219);
+  color: rgb(238, 228, 228);
   border-color: solid rgba(228, 99, 99, 0.692) 1px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 button.btn.bgbutton:hover {
-  background-color: rgb(231, 219, 219);
-  color: 3px rgba(231, 9, 9, 0.856);
+  background-color: rgb(238, 228, 228);
+  color: 3px rgba(163, 12, 12, 0.897);
   border-radius: 15px;
-  border: solid rgba(231, 9, 9, 0.856) 2px;
+  border: solid rgba(163, 12, 12, 0.897) 2px;
 }
 
 .bgredheader {
   background-color: rgba(228, 99, 99, 0.692);
-  color: rgb(231, 219, 219);
+  color: rgb(238, 228, 228);
 }
 
 .bgred1 {
@@ -71,7 +72,7 @@ button.btn.bgbutton:hover {
 }
 
 .borderred {
-  border: solid rgba(231, 9, 9, 0.856) 1px;
+  border: solid rgba(163, 12, 12, 0.897) 1px;
   border-radius: 5px;
 }
 
@@ -118,11 +119,6 @@ button.btn.bgbutton:hover {
   font-size: 15px;
 }
 
-a[href="#"] {
-  border: solid 2px rgb(219, 194, 194);
-  border-radius: 5px;
-}
-
 .btn-base, .btn-stroke, .btn-secondary, .btn-main {
   padding: 4px;
   display: flex;
@@ -131,26 +127,26 @@ a[href="#"] {
 }
 
 .btn-main {
-  background-color: rgba(231, 9, 9, 0.856);
-  color: rgb(231, 219, 219);
+  background-color: rgba(163, 12, 12, 0.897);
+  color: rgb(238, 228, 228);
 }
 .btn-main:hover {
   background-color: rgba(209, 20, 20, 0.521);
-  color: rgb(231, 219, 219);
+  color: rgb(238, 228, 228);
 }
 
 .btn-secondary {
   background-color: rgba(209, 20, 20, 0.521);
-  color: rgb(231, 219, 219);
+  color: rgb(238, 228, 228);
 }
 
 .btn-stroke {
-  background-color: rgb(231, 219, 219);
-  color: rgba(231, 9, 9, 0.856);
+  background-color: rgb(238, 228, 228);
+  color: rgba(163, 12, 12, 0.897);
 }
 .btn-stroke:hover {
-  background-color: rgba(231, 9, 9, 0.856);
-  color: rgb(231, 219, 219);
+  background-color: rgba(163, 12, 12, 0.897);
+  color: rgb(238, 228, 228);
 }
 
 .header-base, .header-profesionals, .header-home {
@@ -173,7 +169,7 @@ a[href="#"] {
   font-size: 1em;
   line-height: 1.4em;
   padding: 20px;
-  color: rgba(231, 9, 9, 0.856);
+  color: rgba(163, 12, 12, 0.897);
 }
 
 .box-home {
@@ -182,7 +178,7 @@ a[href="#"] {
   justify-content: center;
   align-items: flex-end;
   flex-wrap: nowrap;
-  background-color: rgba(231, 9, 9, 0.856);
+  background-color: rgba(163, 12, 12, 0.897);
 }
 
 .box-col {
@@ -204,8 +200,81 @@ a[href="#"] {
   background-color: rgba(221, 91, 91, 0.705);
 }
 
+.transform:hover {
+  transform: translateY(-25);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@keyframes backgrounds {
+  0% {
+    background-image: url(../img/Artesanía_cueroLOGO\ 3.png);
+  }
+  33% {
+    background-image: url(../img/Artesanía_cueroLOGO\ 3\ -\ copia.jpg);
+  }
+  66% {
+    background-image: url(../img/Artesanía_cueroLOGO\ 3\ -\ copia\ 1.jpg);
+  }
+  100% {
+    background-image: url(../img/Artesanía_cueroLOGO\ 3\ -\ copia\ 2.jpg);
+  }
+}
+.header-animated {
+  height: 50vh;
+  background-size: cover;
+  animation-name: backgrounds;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+scale:hover {
+  transform: scale(1.25);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@keyframes animateDiv {
+  0% {
+    background-color: rgb(192, 27, 27);
+  }
+  25% {
+    background-color: rgb(168, 22, 22);
+  }
+  50% {
+    background-color: rgb(134, 7, 7);
+  }
+  75% {
+    background-color: rgb(80, 2, 2);
+  }
+  100% {
+    background-color: rgb(26, 1, 1);
+  }
+}
+h3 {
+  animation: textAlpha;
+  animation-duration: 6s;
+}
+
+.animate {
+  animation: animateDiv;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.transition {
+  background-color: red;
+}
+
+.transition:hover {
+  background-color: pink;
+  transition: all 2s linear;
+  cursor: pointer;
+}
+
 nav ul li a {
-  color: rgba(231, 9, 9, 0.856);
+  color: rgba(163, 12, 12, 0.897);
   text-transform: uppercase;
 }
 nav ul li a:active {
@@ -218,7 +287,7 @@ nav ul li a:active {
 }
 
 .menu {
-  background-color: rgba(231, 9, 9, 0.856);
+  background-color: rgba(163, 12, 12, 0.897);
   padding: 5px 40px;
 }
 .menu img {
@@ -234,15 +303,21 @@ nav ul li a:active {
 .menu ul a {
   text-decoration: none;
   font-size: 16px;
-  color: rgb(248, 243, 244);
+  color: rgb(238, 228, 228);
   text-transform: uppercase;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
 }
 .menu ul a:hover {
   color: rgb(223, 147, 147);
+  background-size: 100% 2px;
 }
 .menu svg {
   width: 35px;
-  fill: rgb(231, 219, 219);
+  fill: rgb(238, 228, 228);
 }
 .menu .navbar-toggler {
   border: solid white 1px;
@@ -266,7 +341,7 @@ figure.productosart a {
   background-color: rgb(242, 8, 51);
   color: #F2DDD5;
   padding: 4x 20px;
-  border-radius: 8px;
+  border-radius: 5px;
   text-align: center;
   text-decoration: none;
   margin-bottom: 10px;
@@ -334,7 +409,7 @@ figure.productosart p {
   align-items: center;
 }
 .home .home-produ .productosart img {
-  width: 80%;
+  width: 60%;
 }
 .home .productosart a:hover {
   color: rgb(194, 148, 155);
@@ -381,7 +456,7 @@ figure.productosart p {
   padding: 6px;
   border-radius: 3px;
   border: none;
-  background-color: rgb(231, 219, 219);
+  background-color: rgb(238, 228, 228);
 }
 .store .filters {
   padding: 0px 20px 30px 30px;
@@ -476,7 +551,7 @@ footer ul {
   list-style: none;
 }
 footer a {
-  color: rgb(231, 219, 219);
+  color: rgb(238, 228, 228);
   text-decoration: none;
 }
 footer img {
@@ -516,10 +591,10 @@ footer img {
     margin-bottom: 10px;
   }
   .store .prod1 img {
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .container-fluid h2 {
-    padding: 15px;
+    padding: 20px;
   }
   .card div {
     color: rgba(209, 20, 20, 0.521);
@@ -531,8 +606,8 @@ footer img {
     border-radius: 15px;
   }
   .card .bg-card {
-    background-color: rgba(231, 9, 9, 0.856);
-    color: rgb(231, 219, 219);
+    background-color: rgba(163, 12, 12, 0.897);
+    color: rgb(238, 228, 228);
   }
   .card .bg-card:hover {
     background-color: rgb(167, 19, 48);

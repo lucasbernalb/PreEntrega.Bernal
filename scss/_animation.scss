@@ -1,0 +1,56 @@
+.transform:hover{
+    transform: translateY(-25);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@keyframes backgrounds{
+    0%{background-image: url(../img/Artesanía_cueroLOGO\ 3.png)}
+    33%{background-image: url(../img/Artesanía_cueroLOGO\ 3\ -\ copia.jpg);}
+    66%{background-image: url(../img/Artesanía_cueroLOGO\ 3\ -\ copia\ 1.jpg);}
+    100%{background-image: url(../img/Artesanía_cueroLOGO\ 3\ -\ copia\ 2.jpg);}
+}
+
+.header-animated{
+    height: 50vh;
+    background-size: cover;
+    animation-name: backgrounds;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+scale:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@keyframes animateDiv{
+    0%{background-color: rgb(192, 27, 27);}
+    25%{background-color: rgb(168, 22, 22);}
+    50%{background-color: rgb(134, 7, 7);}
+    75%{background-color: rgb(80, 2, 2);}
+    100%{background-color: rgb(26, 1, 1);}
+}
+
+h3{
+    animation: textAlpha;
+    animation-duration: 6s;
+}
+
+.animate{
+    animation: animateDiv;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.transition{
+    background-color: red;
+}
+
+.transition:hover{
+    background-color: pink;
+    transition: all 2s linear;
+    cursor: pointer;
+}
