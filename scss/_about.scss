@@ -9,7 +9,7 @@
             flex-direction: column-reverse;
             align-items: flex-start;
             img:hover{
-                border: solid rgb(219, 208, 102) 3px;
+                border: solid $acentColor 3px;
                 border-radius: 5px;
             }
         }
@@ -26,14 +26,14 @@
             text-align: start;
             font-size: 1.1em;
             margin-bottom: 30px;
-            color: rgb(207, 19, 50);
+            color: $letterColor;
         }
     }
     &__link{
         &--left{
             display: block;
             text-align: left;
-            color: red;
+            color: $mainColor;
             text-decoration: none;
             font-size: 1.2em;
             margin-bottom: 30px;
@@ -41,7 +41,7 @@
     }
     &__list{
         &--red{
-            color: red;
+            color: $mainColor;
             list-style: square;
             padding-left: 80px;
             font-size: 1.2em;

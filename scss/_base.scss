@@ -8,16 +8,17 @@ $light:300;
 $regular:400;
 $bold:600;
 //colors
-$mainColor: rgba(163, 12, 12, 0.897);
+$mainColor: rgba(163, 12, 12, 0.932);
 $letterColor: rgba(221, 16, 16, 0.842);
 $acentColor: rgba(221, 91, 91, 0.705);
-$secondaryColor: rgba(209, 20, 20, 0.521);
-$terciaryColor: rgba(228, 99, 99, 0.692);
+$secondaryColor: rgba(209, 20, 20, 0.685);
+$terciaryColor: rgba(248, 143, 143, 0.747);
 $buttonColor: rgba(201, 28, 28, 0.801);
 $pColor: rgb(41, 3, 9);
 $White: rgb(238, 228, 228);
 $Black: rgba(3, 3, 3, 0.87);
 $Background: rgba(226, 6, 6, 0.363);
+$backgroundLight:  #f2d5d5;
 //sizes
 $sm:0.8em;
 $md:1em;
@@ -103,13 +104,13 @@ button.btn.bgbutton:hover{
 }
 
 .bgred{
-    background-color: #f2d5d5;
+    background-color:$backgroundLight;
 }
 
 .box-adds{
-    background-color: rgb(242, 8, 51);
+    background-color: $Background;
     padding: 8px 0px;  
-    text-align: center; color: antiquewhite;
+    text-align: center; color: $White;
 }
 
 .nunitolight{
@@ -136,7 +137,7 @@ button.btn.bgbutton:hover{
 }
 
 .text-primary{
-    color: rgb(242, 7, 51)
+    color: $letterColor;
 }
 
 .nunitolight{

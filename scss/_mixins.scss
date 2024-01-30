@@ -21,6 +21,10 @@
     @extend .btn-base;
     background-color: $secondaryColor;
     color: $White;
+    &:hover{
+        background-color: $terciaryColor;
+        color: $buttonColor;
+    }
 }
 
 .btn-stroke{

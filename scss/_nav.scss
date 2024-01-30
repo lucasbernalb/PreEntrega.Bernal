@@ -36,7 +36,7 @@ nav ul li a{
                 background-size: 0% 2px;
                 transition: background-size .3s;
             &:hover{
-                color: rgb(223, 147, 147);
+                color: $acentColor;
                 background-size: 100% 2px;
             }
         }
@@ -46,7 +46,7 @@ nav ul li a{
         fill: $White;
     }
     .navbar-toggler{
-        border: solid white 1px;
+        border: solid $White 1px;
     }
 }
 .headernosotros{

@@ -42,9 +42,9 @@
    }
 
    .card h2{
-      background-color: rgba(201, 28, 28, 0.801);
-      color: rgb(231, 219, 219);
-      border-color: solid rgba(228, 99, 99, 0.692) 1px;
+      background-color: $letterColor;
+      color: $White;
+      border-color: solid $acentColor 1px;
       border-radius: 15px;
    }
 
@@ -53,17 +53,17 @@
    background-color: $mainColor;
    color: $White; 
       &:hover{
-      background-color: rgb(167, 19, 48);
-      color: rgb(163, 122, 122); 
+      background-color: $secondaryColor;
+      color: $terciaryColor; 
       }
    }
    button.btn.bgred3{
-   background-color: rgba(230, 19, 19, 0.637);
-   color: white;
+   background-color: $buttonColor;
+   color: $White;
       &:hover{
-      background-color: rgba(221, 12, 12, 0.87);
-      color: white;
-      border-color: rgb(255, 255, 255);
+      background-color: $Background;
+      color: $White;
+      border-color: $buttonColor;
       }
    }
 }

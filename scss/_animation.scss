@@ -46,11 +46,11 @@ h3{
 }
 
 .transition{
-    background-color: red;
+    background-color: $mainColor;
 }
 
 .transition:hover{
-    background-color: pink;
+    background-color: $terciaryColor;
     transition: all 2s linear;
     cursor: pointer;
 }
