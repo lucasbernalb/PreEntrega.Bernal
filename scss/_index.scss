@@ -7,8 +7,6 @@ figure.productosart{
         text-align: center;
     }
     a{
-        background-color: $secondaryColor;
-        color: $White;
         padding: 4x 20px;
         border-radius: 5px;
         text-align: center;
@@ -79,9 +77,6 @@ figure.productosart{
     }
     .home-produ .productosart img{
         width: 60%;
-    }
-    .productosart a:hover{
-        color: $acentColor;
     }
 }
 

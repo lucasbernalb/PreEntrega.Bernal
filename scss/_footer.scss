@@ -6,6 +6,9 @@ footer{
     a{
         color: $White;
         text-decoration: none;
+        &:hover{
+            color: $acentColor;
+        }
     }
     img{
         display: inline;
