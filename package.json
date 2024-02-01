@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
     "sass:watch": "sass --watch scss/main.scss  css/main.css",
-    "build":"purgecss --css css/main.css --content index.html -o css/reducido.css"
+    
   },
   "author": "lucas bernal",
   "license": "ISC",
