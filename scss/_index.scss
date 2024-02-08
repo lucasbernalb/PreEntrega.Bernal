@@ -25,6 +25,13 @@ figure.productosart{
     width: 100%;
 }
 
+.carousel-item .carousel-caption .h5 .p a{
+    color: $mainColor;
+}
+
+.carousel-item .carousel-caption .h5 .p a:hover{
+    color: $secondaryColor;
+}
 
 .home{
     display: flex;
