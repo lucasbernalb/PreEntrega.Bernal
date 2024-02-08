@@ -39,7 +39,7 @@ figure.productosart{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 30px;
+        padding: 15px;
         margin-left: 15%;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -47,13 +47,13 @@ figure.productosart{
         border-radius: 15px;
         width: 70%;
         h1{
-           font-size: 35px;
+           font-size: 28px;
            width: 70%;
            margin-bottom: 50px;
         }
         p{
-           font-size: 22px;
-           width: 70%;
+           font-size: 20px;
+           width: 80%;
         }
     }
     .home-produ{
@@ -88,12 +88,12 @@ figure.productosart{
 
 @media (width < 768px){
     .home .productosart{
-        width: 80%;
+        width: 65%;
     }
 }
 
 @media (width < 667px){
     .home .productosart{
-        width: 100%;
+        width: 65%;
     }
 }

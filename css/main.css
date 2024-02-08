@@ -12234,7 +12234,7 @@ figure.productosart p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 15px;
   margin-left: 15%;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -12243,13 +12243,13 @@ figure.productosart p {
   width: 70%;
 }
 .home .homeinfo h1, .home .homeinfo .h1 {
-  font-size: 35px;
+  font-size: 28px;
   width: 70%;
   margin-bottom: 50px;
 }
 .home .homeinfo p {
-  font-size: 22px;
-  width: 70%;
+  font-size: 20px;
+  width: 80%;
 }
 .home .home-produ {
   display: flex;
@@ -12281,12 +12281,12 @@ figure.productosart p {
 }
 @media (width < 768px) {
   .home .productosart {
-    width: 80%;
+    width: 65%;
   }
 }
 @media (width < 667px) {
   .home .productosart {
-    width: 100%;
+    width: 65%;
   }
 }
 .container {
