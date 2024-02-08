@@ -73,7 +73,12 @@ p{
 
 
 .maincolors{
-    color: $mainColor;
+    color: $white;
+    background-color: $mainColor;
+    &:hover{
+        background-color: $Background;
+        color: $secondaryColor;
+    }
 }
 
 .p2{
