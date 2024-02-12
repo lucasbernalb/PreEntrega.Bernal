@@ -70,7 +70,16 @@ p{
     }
 }
 
+.bgredcontact{
+    background-color: $mainColor;
+    color: $White;
+    border-radius: 10px;
+}
 
+.maincolor{
+    background-color: $mainColor;
+    color: $White;
+}
 
 .maincolors{
     color: $white;
@@ -86,6 +95,10 @@ p{
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
+}
+
+.p3{
+    color: $mainColor;
 }
 
 .bgred3{

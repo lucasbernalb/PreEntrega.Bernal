@@ -1,57 +1,18 @@
-.about{
-    padding: 10px 30px;
-    &__box{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        &--reverse{
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: flex-start;
-            img:hover{
-                border: solid $acentColor 3px;
-                border-radius: 5px;
-            }
-        }
-    }
-    &__header{
-        &--left{
-        text-align: left;
-        margin: 10px 0;
-        }
-    }
-    &__text{
-        &--md{
-            display: block;
-            text-align: start;
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            color: $letterColor;
-        }
-    }
-    &__link{
-        &--left{
-            display: block;
-            text-align: left;
-            color: $mainColor;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-    }
-    &__list{
-        &--red{
-            color: $mainColor;
-            list-style: square;
-            padding-left: 80px;
-            font-size: 1.2em;
-            line-height: 1.5em;
-            font-weight: 300;
-            margin: 20px 10px;
-        }
-    }
+.encabezado-img{
+  background-image: url(../img/header/header-contacto.jpg);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.about__box--reverse img[src="../img/collage.png"]{
-    border-radius: 5px;
-  }
+.error404{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

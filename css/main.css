@@ -11902,6 +11902,17 @@ p {
   color: white;
 }
 
+.bgredcontact {
+  background-color: rgba(163, 12, 12, 0.932);
+  color: rgb(238, 228, 228);
+  border-radius: 10px;
+}
+
+.maincolor {
+  background-color: rgba(163, 12, 12, 0.932);
+  color: rgb(238, 228, 228);
+}
+
 .maincolors {
   color: #fff;
   background-color: rgba(163, 12, 12, 0.932);
@@ -11916,6 +11927,10 @@ p {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
+}
+
+.p3 {
+  color: rgba(163, 12, 12, 0.932);
 }
 
 .bgred3 {
@@ -12418,6 +12433,24 @@ footer img {
     border-color: rgba(201, 28, 28, 0.801);
   }
 }
+.encabezado-img {
+  background-image: url(../img/header/header-contacto.jpg);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error404 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-color: red;
 }
